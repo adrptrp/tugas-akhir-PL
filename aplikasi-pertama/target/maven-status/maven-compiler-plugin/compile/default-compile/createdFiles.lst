@@ -1,0 +1,5 @@
+com\contoh\aplikasi\aplikasipertama\model\Orang.class
+com\contoh\aplikasi\aplikasipertama\AplikasiPertamaApplication.class
+com\contoh\aplikasi\aplikasipertama\controller\OrangController.class
+com\contoh\aplikasi\aplikasipertama\repository\OrangRepository.class
+com\contoh\aplikasi\aplikasipertama\service\OrangService.class
