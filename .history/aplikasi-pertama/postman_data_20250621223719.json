@@ -1,0 +1,27 @@
+[
+    {
+        "nama": "Lisa Black",
+        "umur": 27,
+        "url": "http://localhost:8080/api/v1/orang"
+    },
+    {
+        "nama": "Michael Brown",
+        "umur": 32,
+        "url": "http://localhost:8080/api/v1/orang"
+    },
+    {
+        "nama": "Sarah Johnson",
+        "umur": 29,
+        "url": "http://localhost:8080/api/v1/orang"
+    },
+    {
+        "nama": "David Wilson",
+        "umur": 35,
+        "url": "http://localhost:8080/api/v1/orang"
+    },
+    {
+        "nama": "Emily Davis",
+        "umur": 24,
+        "url": "http://localhost:8080/api/v1/orang"
+    }
+]

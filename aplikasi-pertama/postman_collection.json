@@ -1,0 +1,492 @@
+{
+    "info": {
+        "name": "Orang API Collection",
+        "description": "Collection for posting and retrieving Orang data",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Post John Doe",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\"nama\": \"John Doe\", \"umur\": 30}"
+                },
+                "url": {
+                    "raw": "http://localhost:8080/api/v1/orang",
+                    "protocol": "http",
+                    "host": ["localhost"],
+                    "port": "8080",
+                    "path": ["api", "v1", "orang"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Post Jane Smith",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\"nama\": \"Jane Smith\", \"umur\": 24}"
+                },
+                "url": {
+                    "raw": "http://localhost:8080/api/v1/orang",
+                    "protocol": "http",
+                    "host": ["localhost"],
+                    "port": "8080",
+                    "path": ["api", "v1", "orang"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Post Lisa Black",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\"nama\": \"Lisa Black\", \"umur\": 27}"
+                },
+                "url": {
+                    "raw": "http://localhost:8080/api/v1/orang",
+                    "protocol": "http",
+                    "host": ["localhost"],
+                    "port": "8080",
+                    "path": ["api", "v1", "orang"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Post Michael Brown",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\"nama\": \"Michael Brown\", \"umur\": 32}"
+                },
+                "url": {
+                    "raw": "http://localhost:8080/api/v1/orang",
+                    "protocol": "http",
+                    "host": ["localhost"],
+                    "port": "8080",
+                    "path": ["api", "v1", "orang"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Post Sarah Johnson",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\"nama\": \"Sarah Johnson\", \"umur\": 29}"
+                },
+                "url": {
+                    "raw": "http://localhost:8080/api/v1/orang",
+                    "protocol": "http",
+                    "host": ["localhost"],
+                    "port": "8080",
+                    "path": ["api", "v1", "orang"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Post David Wilson",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\"nama\": \"David Wilson\", \"umur\": 35}"
+                },
+                "url": {
+                    "raw": "http://localhost:8080/api/v1/orang",
+                    "protocol": "http",
+                    "host": ["localhost"],
+                    "port": "8080",
+                    "path": ["api", "v1", "orang"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Post Emily Davis",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\"nama\": \"Emily Davis\", \"umur\": 24}"
+                },
+                "url": {
+                    "raw": "http://localhost:8080/api/v1/orang",
+                    "protocol": "http",
+                    "host": ["localhost"],
+                    "port": "8080",
+                    "path": ["api", "v1", "orang"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Get All Orang",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:8080/api/v1/orang",
+                    "protocol": "http",
+                    "host": ["localhost"],
+                    "port": "8080",
+                    "path": ["api", "v1", "orang"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Get John Doe",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:8080/api/v1/orang/name/John%20Doe",
+                    "protocol": "http",
+                    "host": ["localhost"],
+                    "port": "8080",
+                    "path": ["api", "v1", "orang", "name", "John%20Doe"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Get Jane Smith",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:8080/api/v1/orang/name/Jane%20Smith",
+                    "protocol": "http",
+                    "host": ["localhost"],
+                    "port": "8080",
+                    "path": ["api", "v1", "orang", "name", "Jane%20Smith"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Get Lisa Black",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:8080/api/v1/orang/name/Lisa%20Black",
+                    "protocol": "http",
+                    "host": ["localhost"],
+                    "port": "8080",
+                    "path": ["api", "v1", "orang", "name", "Lisa%20Black"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Get Michael Brown",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:8080/api/v1/orang/name/Michael%20Brown",
+                    "protocol": "http",
+                    "host": ["localhost"],
+                    "port": "8080",
+                    "path": ["api", "v1", "orang", "name", "Michael%20Brown"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Get Sarah Johnson",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:8080/api/v1/orang/name/Sarah%20Johnson",
+                    "protocol": "http",
+                    "host": ["localhost"],
+                    "port": "8080",
+                    "path": ["api", "v1", "orang", "name", "Sarah%20Johnson"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Get David Wilson",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:8080/api/v1/orang/name/David%20Wilson",
+                    "protocol": "http",
+                    "host": ["localhost"],
+                    "port": "8080",
+                    "path": ["api", "v1", "orang", "name", "David%20Wilson"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Get Emily Davis",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:8080/api/v1/orang/name/Emily%20Davis",
+                    "protocol": "http",
+                    "host": ["localhost"],
+                    "port": "8080",
+                    "path": ["api", "v1", "orang", "name", "Emily%20Davis"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Get John Doe by ID",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:8080/api/v1/orang/1",
+                    "protocol": "http",
+                    "host": ["localhost"],
+                    "port": "8080",
+                    "path": ["api", "v1", "orang", "1"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Get Jane Smith by ID",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:8080/api/v1/orang/2",
+                    "protocol": "http",
+                    "host": ["localhost"],
+                    "port": "8080",
+                    "path": ["api", "v1", "orang", "2"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Get Lisa Black by ID",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:8080/api/v1/orang/3",
+                    "protocol": "http",
+                    "host": ["localhost"],
+                    "port": "8080",
+                    "path": ["api", "v1", "orang", "3"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Get Michael Brown by ID",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:8080/api/v1/orang/4",
+                    "protocol": "http",
+                    "host": ["localhost"],
+                    "port": "8080",
+                    "path": ["api", "v1", "orang", "4"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Get Sarah Johnson by ID",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:8080/api/v1/orang/5",
+                    "protocol": "http",
+                    "host": ["localhost"],
+                    "port": "8080",
+                    "path": ["api", "v1", "orang", "5"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Get David Wilson by ID",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:8080/api/v1/orang/6",
+                    "protocol": "http",
+                    "host": ["localhost"],
+                    "port": "8080",
+                    "path": ["api", "v1", "orang", "6"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Get Emily Davis by ID",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:8080/api/v1/orang/7",
+                    "protocol": "http",
+                    "host": ["localhost"],
+                    "port": "8080",
+                    "path": ["api", "v1", "orang", "7"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Get All Orang - v2",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:8080/api/v2/orang",
+                    "protocol": "http",
+                    "host": ["localhost"],
+                    "port": "8080",
+                    "path": ["api", "v2", "orang"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Get All Orang - v3",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:8080/api/v3/orang",
+                    "protocol": "http",
+                    "host": ["localhost"],
+                    "port": "8080",
+                    "path": ["api", "v3", "orang"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Get All Orang - v4",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:8080/api/v4/orang",
+                    "protocol": "http",
+                    "host": ["localhost"],
+                    "port": "8080",
+                    "path": ["api", "v4", "orang"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Get All Orang - v5",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:8080/api/v5/orang",
+                    "protocol": "http",
+                    "host": ["localhost"],
+                    "port": "8080",
+                    "path": ["api", "v5", "orang"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Get All Orang - v6",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:8080/api/v6/orang",
+                    "protocol": "http",
+                    "host": ["localhost"],
+                    "port": "8080",
+                    "path": ["api", "v6", "orang"]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Get All Orang - v7",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:8080/api/v7/orang",
+                    "protocol": "http",
+                    "host": ["localhost"],
+                    "port": "8080",
+                    "path": ["api", "v7", "orang"]
+                }
+            },
+            "response": []
+        }
+    ]
+}

@@ -18,7 +18,15 @@ import com.contoh.aplikasi.aplikasipertama.model.Orang;
 import com.contoh.aplikasi.aplikasipertama.service.OrangService;
 
 @RestController
-@RequestMapping("/api/v1/orang")
+@RequestMapping({
+    "/api/v1/orang",
+    "/api/v2/orang",
+    "/api/v3/orang",
+    "/api/v4/orang",
+    "/api/v5/orang",
+    "/api/v6/orang",
+    "/api/v7/orang"
+})
 public class OrangController {
 
     private final OrangService orangService;
@@ -60,6 +68,12 @@ public class OrangController {
     @GetMapping("/search/by-nama")
     public List<Orang> getOrangByNama(@RequestParam String nama) {
         return orangService.findOrangByNama(nama);
+    }
+    
+    @GetMapping("/name/{name}")
+    public ResponseEntity<List<Orang>> getOrangByName(@PathVariable String name) {
+        List<Orang> orangList = orangService.findOrangByNama(name);
+        return orangList.isEmpty() ? ResponseEntity.notFound().build() : ResponseEntity.ok(orangList);
     }
 
     @GetMapping("/search/by-umur-greater-than")

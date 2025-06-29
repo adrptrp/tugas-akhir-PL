@@ -21,26 +21,27 @@ public class OrangService {
         if (orangRepository.count() == 0) {
             orangRepository.save(new Orang("John Doe", 30));
             orangRepository.save(new Orang("Jane Smith", 24));
+            orangRepository.save(new Orang("Lisa Black", 27));
+            orangRepository.save(new Orang("Michael Brown", 32));
+            orangRepository.save(new Orang("Sarah Johnson", 29));
+            orangRepository.save(new Orang("David Wilson", 35));
+            orangRepository.save(new Orang("Emily Davis", 24));
             System.out.println("Data awal ditambahkan ke H2 Database!");
         }
     }
 
-    // Mendapatkan semua orang
     public List<Orang> getAllOrang() {
         return orangRepository.findAll();
     }
 
-    // Mendapatkan orang berdasarkan ID
     public Optional<Orang> getOrangById(Long id) {
         return orangRepository.findById(id);
     }
 
-    // Menambahkan orang baru
     public Orang addOrang(Orang orang) {
         return orangRepository.save(orang);
     }
 
-    // Memperbarui orang
     public Optional<Orang> updateOrang(Long id, Orang orangBaru) {
         return orangRepository.findById(id).map(existingOrang -> {
             existingOrang.setNama(orangBaru.getNama());
@@ -49,7 +50,6 @@ public class OrangService {
         });
     }
 
-    // Menghapus orang
     public boolean deleteOrang(Long id) {
         if (orangRepository.existsById(id)) {
             orangRepository.deleteById(id);
@@ -60,9 +60,12 @@ public class OrangService {
 
     // Query method kustom
     public List<Orang> findOrangByNama(String nama) {
-        return orangRepository.findByNama(nama);
+        // Case-insensitive search
+        return orangRepository.findAll().stream()
+            .filter(orang -> orang.getNama().equalsIgnoreCase(nama))
+            .collect(java.util.stream.Collectors.toList());
     }
-
+    
     public List<Orang> findOrangByUmurGreaterThan(int umur) {
         return orangRepository.findByUmurGreaterThan(umur);
     }
